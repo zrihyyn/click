@@ -341,7 +341,6 @@ div {
   }
 }
 #overlay, .input-overlay {
-  /* overlay 및 input-overlay의 배경이 화면을 꽉 채우도록 설정 */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -353,21 +352,21 @@ div {
 }
 
 .overlay {
-  display: flex; /* 수평 정렬과 수직 정렬 활성화 */
-  justify-content: center; /* 수평 정렬 */
-  align-items: center; /* 수직 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(0, 0, 0); /* 배경색 */
-  color: white; /* 텍스트 색상 */
-  font-size: 20px; /* 텍스트 크기 */
+  background: rgb(0, 0, 0);
+  color: rgb(34, 56, 255);
+  font-size: 20px;
   z-index: 9999;
   cursor: pointer;
   text-decoration: underline;
-  text-align: center; /* 텍스트가 여러 줄일 경우 중앙 정렬 */
+  text-align: center;
 }
 .overlay p {
   position: fixed;
@@ -376,6 +375,7 @@ div {
   transform: translate(-50%, -50%); /* 요소의 중앙 정렬 */
   margin: 0;
   line-height: 30px;
+  text-decoration: underline;
 }
 
 .input-overlay {
@@ -400,11 +400,11 @@ div {
   color: rgb(34, 56, 255);
 }
 .input-overlay input {
-  background-color: rgb(202, 190, 255);
+  background-color: white;
   width: 300px;
   padding: 10px;
   font-size: 18px;
-  border: none;
+  border: 1px solid rgb(34, 56, 255);
   outline: none;
   margin-bottom: 20px;
   border-radius: 0;
