@@ -6,8 +6,8 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
   text-align: left;
-  height: 100%; /* 화면을 꽉 채우도록 설정 */
-  overflow: hidden; /* 스크롤 비활성화 */
+  height: 100%;
+  overflow: hidden;
 }
 
 #container {
@@ -23,50 +23,50 @@ div {
 
 #a {
   position: fixed;
-  top: 50px;
-  left: 200px;
+  top: 20%;
+  left: 15%;
 }
 
 #b {
   position: fixed;
-  top: 110px;
-  left: 200px;
+  top: 30%;
+  left: 45%;
 }
 
 #c {
   position: fixed;
-  top: 600px;
-  left: 1000px;
+  top: 17%;
+  left: 55%;
 }
 
 #d {
   position: fixed;
-  top: 480px;
-  left: 700px;
+  top: 80%;
+  left: 20%;
 }
 
 #e {
   position: fixed;
-  top: 120px;
-  left: 60px;
+  top: 15%;
+  left: 20%;
 }
 
 #f {
   position: fixed;
-  top: 700px;
-  left: 20px;
+  top: 38%;
+  left: 70%;
 }
 
 #g {
   position: fixed;
-  top: 200px;
-  left: 1200px;
+  top: 22%;
+  left: 82%;
 }
 
 #h {
   position: fixed;
-  top: 60px;
-  left: 1300px;
+  top: 10%;
+  left: 76%;
 }
 
 #i {
@@ -83,19 +83,19 @@ div {
 
 #k {
   position: fixed;
-  top: 91%;
-  left: 90%;
+  top: 45%;
+  left: 56%;
 }
 
 #l {
   position: fixed;
-  top: 91%;
+  top: 88%;
   left: 44%;
 }
 
 #m {
   position: fixed;
-  top: 3%;
+  top: 15%;
   left: 9%;
 }
 
@@ -141,205 +141,6 @@ div {
   left: 10%;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 30px;
-  }
-  div {
-    line-height: 50px;
-  }
-  #a {
-    top: 20px;
-    left: 50px;
-  }
-  #b {
-    top: 100px;
-    left: 100px;
-  }
-  #c {
-    top: 300px;
-    left: 100px;
-  }
-  #d {
-    top: 400px;
-    left: 250px;
-  }
-  #e {
-    top: 50px;
-    left: 20px;
-  }
-  #f {
-    top: 500px;
-    left: 70px;
-  }
-  #g {
-    top: 200px;
-    left: 300px;
-  }
-  #h {
-    top: 80px;
-    left: 10px;
-  }
-  #i {
-    top: 50%;
-    left: 50%;
-  }
-  #j {
-    top: 5%;
-    left: 20%;
-  }
-  #k {
-    top: 90%;
-    left: 80%;
-  }
-  #l {
-    top: 80%;
-    left: 40%;
-  }
-  #m {
-    top: 10%;
-    left: 10%;
-  }
-  #n {
-    top: 20%;
-    left: 15%;
-  }
-  #o {
-    top: 30%;
-    left: 35%;
-  }
-  #p {
-    top: 40%;
-    left: 10%;
-  }
-  #q {
-    top: 50%;
-    left: 20%;
-  }
-  #r {
-    top: 60%;
-    left: 25%;
-  }
-  #s {
-    top: 25%;
-    left: 10%;
-  }
-  #t {
-    top: 15%;
-    left: 30%;
-  }
-}
-@media screen and (max-width: 480px) {
-  body {
-    font-size: 20px;
-  }
-  div {
-    line-height: 40px;
-  }
-  #a {
-    top: 80px;
-    left: 30px;
-  }
-  #b {
-    top: 50px;
-    left: 200px;
-  }
-  #c {
-    top: 200px;
-    left: 50px;
-  }
-  #d {
-    top: 300px;
-    left: 120px;
-  }
-  #e {
-    top: 130px;
-    left: 100px;
-  }
-  #f {
-    top: 400px;
-    left: 80px;
-  }
-  #g {
-    top: 150px;
-    left: 200px;
-  }
-  #h {
-    top: 60px;
-    left: 10px;
-  }
-  #i {
-    top: 40%;
-    left: 50%;
-  }
-  #j {
-    top: 10%;
-    left: 25%;
-  }
-  #k {
-    top: 85%;
-    left: 70%;
-  }
-  #l {
-    top: 75%;
-    left: 30%;
-  }
-  #m {
-    top: 5%;
-    left: 33%;
-  }
-  #n {
-    top: 18%;
-    left: 20%;
-  }
-  #o {
-    top: 25%;
-    left: 30%;
-  }
-  #p {
-    top: 38%;
-    left: 44%;
-  }
-  #q {
-    top: 45%;
-    left: 22%;
-  }
-  #r {
-    top: 55%;
-    left: 35%;
-  }
-  #s {
-    top: 20%;
-    left: 80%;
-  }
-  #t {
-    top: 12%;
-    left: 25%;
-  }
-}
-.jh {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 14px;
-  color: #555;
-  text-align: center;
-  z-index: 1000;
-}
-
-@media screen and (max-width: 768px) {
-  .jh {
-    font-size: 8px;
-    font-weight: lighter;
-  }
-}
-@media screen and (max-width: 480px) {
-  .jh {
-    font-size: 8px;
-    font-weight: lighter;
-  }
-}
 #overlay, .input-overlay {
   display: flex;
   justify-content: center;
@@ -433,20 +234,9 @@ div {
   div {
     line-height: 50px;
   }
-  #a {
-    top: 20px;
-    left: 50px;
-  }
-  .input-overlay p {
-    font-size: 20px;
-  }
-  .input-overlay input {
-    width: 250px;
-    font-size: 16px;
-  }
-  .input-overlay button {
-    font-size: 16px;
-    padding: 8px 16px;
+  .jh {
+    font-size: 8px;
+    font-weight: lighter;
   }
 }
 @media screen and (max-width: 480px) {
@@ -456,15 +246,18 @@ div {
   div {
     line-height: 40px;
   }
-  .input-overlay p {
-    font-size: 16px;
+  .jh {
+    font-size: 8px;
+    font-weight: lighter;
   }
-  .input-overlay input {
-    width: 200px;
-    font-size: 14px;
-  }
-  .input-overlay button {
-    font-size: 14px;
-    padding: 6px 12px;
-  }
+}
+.jh {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  z-index: 1000;
 }/*# sourceMappingURL=style28.css.map */
