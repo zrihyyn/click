@@ -22,30 +22,45 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('t'),
     ];
 
+    const inputOverlay = document.getElementById("input-overlay");
     const overlay = document.getElementById("overlay");
     const container = document.getElementById("container");
+    const nameInput = document.getElementById("name-input");
+    const startButton = document.getElementById("start-button");
 
-    overlay.addEventListener("click", function() {
+    startButton.addEventListener("click", function () {
+        const name = nameInput.value.trim();
+        if (name) {
+            document.getElementById('a').textContent = `${name},`; // 이름 반영
+            inputOverlay.style.display = "none"; // 입력 창 숨기기
+            overlay.style.display = "block"; // 다음 오버레이 표시
+        } else {
+            alert("Please enter your name.");
+        }
+    });
+
+    overlay.addEventListener("click", function () {
         overlay.style.display = "none";
         container.style.display = "flex";
+        animateElements(); // 오버레이 클릭 후 애니메이션 시작
     });
 
     function animateElements() {
         let delay = 0;
+        const visibilityDuration = 1000; // 모든 요소가 1000ms 동안 보이도록 설정
+        const delayBetweenElements = 1300; // 각 요소 간의 지연 시간
 
-        elements.forEach((element, index) => {
+        elements.forEach((element) => {
             setTimeout(() => {
                 element.style.visibility = 'visible';
                 setTimeout(() => {
                     element.style.visibility = 'hidden';
-                }, element.id === 'a' ? 2000 : 1000); // #a 요소는 2000ms, 나머지는 1000ms 동안 보이도록 설정
+                }, visibilityDuration); // 1000ms 동안 보이도록 설정
             }, delay);
 
-            delay += element.id === 'a' ? 2000 : 1300; // #a 요소의 지연 시간을 조정
+            delay += delayBetweenElements; // 다음 요소를 위한 지연 시간 증가
         });
 
         setTimeout(animateElements, delay); // 모든 애니메이션이 끝난 후 다시 호출
     }
-
-    animateElements();
 });

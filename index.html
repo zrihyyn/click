@@ -7,10 +7,15 @@
     <title>heyy</title>
 </head>
 <body>
-    <div class="overlay" id="overlay">
-        <p>Click to reveal warm words</p>
+    <div class="input-overlay" id="input-overlay">
+        <p>Enter your name</p>
+        <input type="text" id="name-input" placeholder="Type your name here!">
+        <button id="start-button">Next</button>
     </div>
-    <div id="container">
+    <div class="overlay" id="overlay" style="display: none;">
+        <p>Click to reveal<br>warm words</p>
+    </div>
+    <div id="container" style="display: none;">
         <div id="a" style="visibility: hidden;">Guys,</div>
         <div id="b" style="visibility: hidden;">hope</div>
         <div id="c" style="visibility: hidden;">you</div>
